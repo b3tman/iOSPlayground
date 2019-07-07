@@ -1,0 +1,24 @@
+### Headers settings
+company: b3tman
+
+### Xcode project settings
+project_name: AudiOBD2Scanner
+xcodeproj_path: AudiOBD2Scanner.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: AudiOBD2Scanner
+
+# The file path for new modules
+project_file_path: /AudiOBD2Scanner/Classes/PresentationLayer/Modules/MainFlow/
+
+# The Xcode group path to new modules
+project_group_path: /AudiOBD2Scanner/Classes/PresentationLayer/Modules/MainFlow/
+
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+templates:
+- {name: swifty_viper_b3tman, local: './swifty_viper_b3tman'}

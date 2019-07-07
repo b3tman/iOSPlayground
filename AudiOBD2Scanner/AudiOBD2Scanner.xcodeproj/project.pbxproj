@@ -3,27 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F90C4F5D15B0713860AF7CC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D5E9B1CE7D46C6486701C3 /* TabBarViewController.swift */; };
+		288FBE7304F809873AD00406 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF7D1A8D88901DEBD92AE9 /* TabBarPresenter.swift */; };
+		42747C521D70E6BD39AD5221 /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EDA99BAF6280F730884B2 /* TabBarProtocols.swift */; };
+		9A55EE6688955CB5C09B8768 /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A4C2064933CD5AA5CCF07 /* TabBarInteractor.swift */; };
+		B7C65A6113EBDDBB6A858B31 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311D90EAA79631D0E0F1E8C7 /* TabBarConfigurator.swift */; };
+		CAA16E4129DC5DA80445078D /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261C76127405A300FE9AA934 /* TabBarRouter.swift */; };
+		DCC8D079F920B8AD9C01EED3 /* Pods_AudiOBD2Scanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4B9DA43F30102A15D5C9C7 /* Pods_AudiOBD2Scanner.framework */; };
+		F22B9A4522D2333300589D1C /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B9A4422D2333300589D1C /* Presentable.swift */; };
+		F22B9A4A22D23B5A00589D1C /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22B9A4922D23B5A00589D1C /* TabBar.storyboard */; };
+		F22B9A4C22D2416C00589D1C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B9A4B22D2416C00589D1C /* R.generated.swift */; };
 		F25F50EC22D2088A00F5142D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F50EB22D2088A00F5142D /* AppDelegate.swift */; };
-		F25F50EE22D2088A00F5142D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F50ED22D2088A00F5142D /* ViewController.swift */; };
-		F25F50F122D2088A00F5142D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25F50EF22D2088A00F5142D /* Main.storyboard */; };
 		F25F50F422D2088B00F5142D /* AudiOBD2Scanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F25F50F222D2088A00F5142D /* AudiOBD2Scanner.xcdatamodeld */; };
 		F25F50F622D2088D00F5142D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25F50F522D2088D00F5142D /* Assets.xcassets */; };
 		F25F50F922D2088D00F5142D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25F50F722D2088D00F5142D /* LaunchScreen.storyboard */; };
+		F25F510C22D21ACA00F5142D /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F510B22D21ACA00F5142D /* ModuleAssembly.swift */; };
+		F25F510E22D21BE900F5142D /* ApplicationAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F510D22D21BE900F5142D /* ApplicationAssembler.swift */; };
+		F25F511022D21C4C00F5142D /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F510F22D21C4C00F5142D /* AppearanceConfigurator.swift */; };
+		F25F511222D21C6500F5142D /* ApplicationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F511122D21C6500F5142D /* ApplicationConfigurator.swift */; };
+		F25F511422D21C8400F5142D /* ConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F511322D21C8400F5142D /* ConfiguratorProtocol.swift */; };
+		F25F511622D21D1F00F5142D /* BusinessLayerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F511522D21D1F00F5142D /* BusinessLayerAssembly.swift */; };
+		F3D33806B29EE644BB04BD40 /* TabBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30363E5F9D6D1CFB3F62889B /* TabBarAssembler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05F6406B0AB417890865FF66 /* Pods-AudiOBD2Scanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiOBD2Scanner.release.xcconfig"; path = "Target Support Files/Pods-AudiOBD2Scanner/Pods-AudiOBD2Scanner.release.xcconfig"; sourceTree = "<group>"; };
+		08D5E9B1CE7D46C6486701C3 /* TabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		261C76127405A300FE9AA934 /* TabBarRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		30363E5F9D6D1CFB3F62889B /* TabBarAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarAssembler.swift; sourceTree = "<group>"; };
+		311D90EAA79631D0E0F1E8C7 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		3ACF7D1A8D88901DEBD92AE9 /* TabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		6D2EDA99BAF6280F730884B2 /* TabBarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
+		7D0A4C2064933CD5AA5CCF07 /* TabBarInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
+		8AD6EA915637EAD96B126D99 /* Pods-AudiOBD2Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiOBD2Scanner.debug.xcconfig"; path = "Target Support Files/Pods-AudiOBD2Scanner/Pods-AudiOBD2Scanner.debug.xcconfig"; sourceTree = "<group>"; };
+		BF4B9DA43F30102A15D5C9C7 /* Pods_AudiOBD2Scanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudiOBD2Scanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F22B9A4422D2333300589D1C /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		F22B9A4922D23B5A00589D1C /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		F22B9A4B22D2416C00589D1C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		F25F50E822D2088A00F5142D /* AudiOBD2Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudiOBD2Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25F50EB22D2088A00F5142D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F25F50ED22D2088A00F5142D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F25F50F022D2088A00F5142D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F25F50F322D2088B00F5142D /* AudiOBD2Scanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AudiOBD2Scanner.xcdatamodel; sourceTree = "<group>"; };
 		F25F50F522D2088D00F5142D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F25F50F822D2088D00F5142D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F25F50FA22D2088D00F5142D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25F510B22D21ACA00F5142D /* ModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
+		F25F510D22D21BE900F5142D /* ApplicationAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationAssembler.swift; sourceTree = "<group>"; };
+		F25F510F22D21C4C00F5142D /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
+		F25F511122D21C6500F5142D /* ApplicationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfigurator.swift; sourceTree = "<group>"; };
+		F25F511322D21C8400F5142D /* ConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorProtocol.swift; sourceTree = "<group>"; };
+		F25F511522D21D1F00F5142D /* BusinessLayerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessLayerAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +63,116 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCC8D079F920B8AD9C01EED3 /* Pods_AudiOBD2Scanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A95EA48D1052EAB7F956E54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF4B9DA43F30102A15D5C9C7 /* Pods_AudiOBD2Scanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14DBAFDE2186214BC3C63DD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AD6EA915637EAD96B126D99 /* Pods-AudiOBD2Scanner.debug.xcconfig */,
+				05F6406B0AB417890865FF66 /* Pods-AudiOBD2Scanner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2EE2C5DD35DBB00015719025 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6D2EDA99BAF6280F730884B2 /* TabBarProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		4C68F00F83388131845B15A0 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				311D90EAA79631D0E0F1E8C7 /* TabBarConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		584B7AE2EF96F5BAF5E33FBA /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				261C76127405A300FE9AA934 /* TabBarRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		69461E7DA54A77E835BE3FC8 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				30363E5F9D6D1CFB3F62889B /* TabBarAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		98D2C1BEDD82367E57C351AC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3ACF7D1A8D88901DEBD92AE9 /* TabBarPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D17927DA54F61F8809E9ABC4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				08D5E9B1CE7D46C6486701C3 /* TabBarViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D639DA0590DA74877233CFB1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F22B9A4922D23B5A00589D1C /* TabBar.storyboard */,
+				D17927DA54F61F8809E9ABC4 /* View */,
+				98D2C1BEDD82367E57C351AC /* Presenter */,
+				F2DBDCFE33B081CFC9E35748 /* Interactor */,
+				584B7AE2EF96F5BAF5E33FBA /* Router */,
+				4C68F00F83388131845B15A0 /* Configurator */,
+				69461E7DA54A77E835BE3FC8 /* Assembly */,
+				2EE2C5DD35DBB00015719025 /* Protocols */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		F22B9A4022D22F4700589D1C /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				D639DA0590DA74877233CFB1 /* TabBar */,
+			);
+			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		F22B9A4322D2332800589D1C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F22B9A4422D2333300589D1C /* Presentable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		F25F50DF22D2088A00F5142D = {
 			isa = PBXGroup;
 			children = (
 				F25F50EA22D2088A00F5142D /* AudiOBD2Scanner */,
 				F25F50E922D2088A00F5142D /* Products */,
+				14DBAFDE2186214BC3C63DD8 /* Pods */,
+				0A95EA48D1052EAB7F956E54 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +187,118 @@
 		F25F50EA22D2088A00F5142D /* AudiOBD2Scanner */ = {
 			isa = PBXGroup;
 			children = (
+				F25F510022D2190D00F5142D /* Classes */,
+				F25F510222D2191D00F5142D /* Other */,
+				F25F510122D2191600F5142D /* Common */,
+			);
+			path = AudiOBD2Scanner;
+			sourceTree = "<group>";
+		};
+		F25F510022D2190D00F5142D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
 				F25F50EB22D2088A00F5142D /* AppDelegate.swift */,
-				F25F50ED22D2088A00F5142D /* ViewController.swift */,
-				F25F50EF22D2088A00F5142D /* Main.storyboard */,
+				F25F510522D2198F00F5142D /* PresentationLayer */,
+				F25F510422D2197B00F5142D /* BuisnessLayer */,
+				F25F510322D2196800F5142D /* ApplicationLayer */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F25F510122D2191600F5142D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F22B9A4322D2332800589D1C /* Protocols */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F25F510222D2191D00F5142D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F22B9A4B22D2416C00589D1C /* R.generated.swift */,
 				F25F50F522D2088D00F5142D /* Assets.xcassets */,
-				F25F50F722D2088D00F5142D /* LaunchScreen.storyboard */,
 				F25F50FA22D2088D00F5142D /* Info.plist */,
 				F25F50F222D2088A00F5142D /* AudiOBD2Scanner.xcdatamodeld */,
 			);
-			path = AudiOBD2Scanner;
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F25F510322D2196800F5142D /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F25F510A22D21A8E00F5142D /* Configurators */,
+				F25F510922D21A8600F5142D /* Assembler */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		F25F510422D2197B00F5142D /* BuisnessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F25F510822D21A7300F5142D /* Assembler */,
+			);
+			path = BuisnessLayer;
+			sourceTree = "<group>";
+		};
+		F25F510522D2198F00F5142D /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				F25F50F722D2088D00F5142D /* LaunchScreen.storyboard */,
+				F25F510622D21A1E00F5142D /* Assembler */,
+				F25F510722D21A2B00F5142D /* Modules */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		F25F510622D21A1E00F5142D /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				F25F510B22D21ACA00F5142D /* ModuleAssembly.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		F25F510722D21A2B00F5142D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F22B9A4022D22F4700589D1C /* MainFlow */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F25F510822D21A7300F5142D /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				F25F511522D21D1F00F5142D /* BusinessLayerAssembly.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		F25F510922D21A8600F5142D /* Assembler */ = {
+			isa = PBXGroup;
+			children = (
+				F25F510D22D21BE900F5142D /* ApplicationAssembler.swift */,
+			);
+			path = Assembler;
+			sourceTree = "<group>";
+		};
+		F25F510A22D21A8E00F5142D /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				F25F510F22D21C4C00F5142D /* AppearanceConfigurator.swift */,
+				F25F511122D21C6500F5142D /* ApplicationConfigurator.swift */,
+				F25F511322D21C8400F5142D /* ConfiguratorProtocol.swift */,
+			);
+			path = Configurators;
+			sourceTree = "<group>";
+		};
+		F2DBDCFE33B081CFC9E35748 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A4C2064933CD5AA5CCF07 /* TabBarInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F25F50FD22D2088D00F5142D /* Build configuration list for PBXNativeTarget "AudiOBD2Scanner" */;
 			buildPhases = (
+				D0881B81909AF87F4FFC6EFD /* [CP] Check Pods Manifest.lock */,
+				F22B9A4622D234A100589D1C /* ShellScript */,
 				F25F50E422D2088A00F5142D /* Sources */,
 				F25F50E522D2088A00F5142D /* Frameworks */,
 				F25F50E622D2088A00F5142D /* Resources */,
+				6FDE61528DFC1F2718F91A4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +363,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25F50F922D2088D00F5142D /* LaunchScreen.storyboard in Resources */,
+				F22B9A4A22D23B5A00589D1C /* TabBar.storyboard in Resources */,
 				F25F50F622D2088D00F5142D /* Assets.xcassets in Resources */,
-				F25F50F122D2088A00F5142D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FDE61528DFC1F2718F91A4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudiOBD2Scanner/Pods-AudiOBD2Scanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AudiOBD2Scanner/Pods-AudiOBD2Scanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AudiOBD2Scanner/Pods-AudiOBD2Scanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0881B81909AF87F4FFC6EFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudiOBD2Scanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F22B9A4622D234A100589D1C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F25F50E422D2088A00F5142D /* Sources */ = {
@@ -139,22 +437,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25F50F422D2088B00F5142D /* AudiOBD2Scanner.xcdatamodeld in Sources */,
-				F25F50EE22D2088A00F5142D /* ViewController.swift in Sources */,
+				F22B9A4522D2333300589D1C /* Presentable.swift in Sources */,
+				F25F511422D21C8400F5142D /* ConfiguratorProtocol.swift in Sources */,
 				F25F50EC22D2088A00F5142D /* AppDelegate.swift in Sources */,
+				F25F511022D21C4C00F5142D /* AppearanceConfigurator.swift in Sources */,
+				F25F511222D21C6500F5142D /* ApplicationConfigurator.swift in Sources */,
+				F25F510C22D21ACA00F5142D /* ModuleAssembly.swift in Sources */,
+				F25F510E22D21BE900F5142D /* ApplicationAssembler.swift in Sources */,
+				F22B9A4C22D2416C00589D1C /* R.generated.swift in Sources */,
+				F25F511622D21D1F00F5142D /* BusinessLayerAssembly.swift in Sources */,
+				0F90C4F5D15B0713860AF7CC /* TabBarViewController.swift in Sources */,
+				288FBE7304F809873AD00406 /* TabBarPresenter.swift in Sources */,
+				9A55EE6688955CB5C09B8768 /* TabBarInteractor.swift in Sources */,
+				CAA16E4129DC5DA80445078D /* TabBarRouter.swift in Sources */,
+				B7C65A6113EBDDBB6A858B31 /* TabBarConfigurator.swift in Sources */,
+				F3D33806B29EE644BB04BD40 /* TabBarAssembler.swift in Sources */,
+				42747C521D70E6BD39AD5221 /* TabBarProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F25F50EF22D2088A00F5142D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F25F50F022D2088A00F5142D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F25F50F722D2088D00F5142D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,11 +588,12 @@
 		};
 		F25F50FE22D2088D00F5142D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AD6EA915637EAD96B126D99 /* Pods-AudiOBD2Scanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VCKQL6T87N;
-				INFOPLIST_FILE = AudiOBD2Scanner/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AudiOBD2Scanner/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -296,18 +601,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = audi.car.scanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F25F50FF22D2088D00F5142D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05F6406B0AB417890865FF66 /* Pods-AudiOBD2Scanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VCKQL6T87N;
-				INFOPLIST_FILE = AudiOBD2Scanner/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AudiOBD2Scanner/Other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,7 +621,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = audi.car.scanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
