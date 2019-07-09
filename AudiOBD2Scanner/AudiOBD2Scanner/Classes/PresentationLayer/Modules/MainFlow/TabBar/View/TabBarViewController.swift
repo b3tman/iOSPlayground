@@ -8,15 +8,17 @@
 
 import UIKit
 
-class TabBarViewController: UIViewController {
+class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
 
     var output: TabBarViewOutput!
-    
-    @IBOutlet weak var tabBar: UITabBar!
+    var tabbarControllers: ViewControllers!
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        delegate = self
+        
         output.viewIsReady()
     }
 }
@@ -25,8 +27,18 @@ class TabBarViewController: UIViewController {
 
 extension TabBarViewController: TabBarViewInput {
   
-	func setupInitialState() {
+	func setupInitialState(viewControllers: ViewControllers, selectedIndex: Int) {
+        
+        self.tabbarControllers = viewControllers
+        viewControllers.main.title = "Main"
+        viewControllers.settings.title = "Settings"
     
+        self.viewControllers = [viewControllers.main,
+                                viewControllers.settings]
+        
+        
+        
+        self.selectedIndex = selectedIndex
   	}
   
 }

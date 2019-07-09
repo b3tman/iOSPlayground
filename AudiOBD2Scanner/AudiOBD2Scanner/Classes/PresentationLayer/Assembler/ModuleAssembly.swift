@@ -16,6 +16,8 @@ class ModuleAssembly {
     }
     
     init(parent: Assembler) {
-        assembler = Assembler([TabBarModuleAssembler()], parent: parent)
+        assembler = Assembler([TabBarModuleAssembler(),
+                               MainModuleAssembler(),
+                               SettingsModuleAssembler()], parent: parent)
     }
 }

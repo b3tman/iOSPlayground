@@ -1,47 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aMm-1F-wRQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="elF-ny-5ZA">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Tab Bar View Controller-->
-        <scene sceneID="3lN-b9-jSU">
+        <scene sceneID="32H-5s-XJU">
             <objects>
-                <viewController storyboardIdentifier="TabBarViewController" id="aMm-1F-wRQ" customClass="TabBarViewController" customModule="AudiOBD2Scanner" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="A0r-Lb-Dzh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7p-Wu-eQU">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem systemItem="favorites" id="VUd-0O-lcL"/>
-                                    <tabBarItem systemItem="more" id="qqz-rD-hzU"/>
-                                </items>
-                            </tabBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="a7p-Wu-eQU" firstAttribute="leading" secondItem="7fz-ga-gf4" secondAttribute="leading" id="YwD-tx-d7K"/>
-                            <constraint firstItem="a7p-Wu-eQU" firstAttribute="bottom" secondItem="7fz-ga-gf4" secondAttribute="bottom" id="Z46-kD-3gs"/>
-                            <constraint firstItem="a7p-Wu-eQU" firstAttribute="trailing" secondItem="7fz-ga-gf4" secondAttribute="trailing" id="d98-zd-aIQ"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="7fz-ga-gf4"/>
-                    </view>
-                    <connections>
-                        <outlet property="tabBar" destination="a7p-Wu-eQU" id="MaI-Zw-PML"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ege-Fm-ldL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="TabBarViewController" id="elF-ny-5ZA" customClass="TabBarViewController" customModule="AudiOBD2Scanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CuD-ll-AeP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Snm-fn-8RB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-843" y="42"/>
+            <point key="canvasLocation" x="-1401" y="-105"/>
         </scene>
     </scenes>
 </document>

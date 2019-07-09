@@ -8,10 +8,19 @@
 
 import UIKit
 
+enum SelectedTab: Int {
+    case main, settings
+}
+
+typealias ViewControllers = (main: UIViewController,
+                         settings: UIViewController)
+
+typealias TabBarModules = (main: UIViewController,
+                       settings: UIViewController)
 
 protocol TabBarViewInput: class, Presentable {
 
-    func setupInitialState()
+    func setupInitialState(viewControllers: ViewControllers, selectedIndex: Int)
 }
 
 protocol TabBarViewOutput {
@@ -30,7 +39,8 @@ protocol TabBarModuleOutput: class {
 }
 
 protocol TabBarInteractorInput {
-
+    
+    func prepareViewControllersFromTabBarModules(modules: TabBarModules) -> ViewControllers
 }
 
 protocol TabBarInteractorOutput: class {
@@ -39,4 +49,5 @@ protocol TabBarInteractorOutput: class {
 
 protocol TabBarRouterInput {
 
+    func getModules() -> TabBarModules
 }

@@ -7,16 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4CD4F60C9E9D8BAC7F44DB /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A97B33C3869102919CF046F /* SettingsInteractor.swift */; };
 		0F90C4F5D15B0713860AF7CC /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D5E9B1CE7D46C6486701C3 /* TabBarViewController.swift */; };
 		288FBE7304F809873AD00406 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF7D1A8D88901DEBD92AE9 /* TabBarPresenter.swift */; };
+		373FD16EE3B5410312DDF9EA /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0929243AB8FE87B2011266 /* SettingsPresenter.swift */; };
+		38088DFD6B88A13CB46419F7 /* MainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B75B023086BDA7E13CF9F7 /* MainProtocols.swift */; };
+		3C2C6F2A86AC3F805EE646D0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913C30ED3E2D6C44963F332B /* SettingsViewController.swift */; };
 		42747C521D70E6BD39AD5221 /* TabBarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2EDA99BAF6280F730884B2 /* TabBarProtocols.swift */; };
+		440CEEA7F36362B46A230A3F /* MainAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB69D08FE9E408691AB80570 /* MainAssembler.swift */; };
+		687E47C966A306AC66C20065 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BECD31FFAC027C11DB2E22C /* MainInteractor.swift */; };
+		723F6CB12D20DF61FFA2EBFD /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CDF13CE9E88E80E7CFD8A7 /* MainConfigurator.swift */; };
 		9A55EE6688955CB5C09B8768 /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A4C2064933CD5AA5CCF07 /* TabBarInteractor.swift */; };
+		9EF7B4F4485144A6B38722FA /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49163E1017BFDEA2A8268255 /* SettingsProtocols.swift */; };
+		B59DCC6E2954D7246CC8BF0F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B379693BDC256843B7F558CC /* MainViewController.swift */; };
 		B7C65A6113EBDDBB6A858B31 /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311D90EAA79631D0E0F1E8C7 /* TabBarConfigurator.swift */; };
 		CAA16E4129DC5DA80445078D /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261C76127405A300FE9AA934 /* TabBarRouter.swift */; };
+		CF2F7F1D929FE03FF3831B42 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3917FEC200E2335553652367 /* SettingsRouter.swift */; };
 		DCC8D079F920B8AD9C01EED3 /* Pods_AudiOBD2Scanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4B9DA43F30102A15D5C9C7 /* Pods_AudiOBD2Scanner.framework */; };
+		E153489E9995A27C81FCF4C4 /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE8FF06F10696463E83BBFB /* MainRouter.swift */; };
+		EDB9388DDB3F70A64E898D02 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9043552EA2D9942A17E2C5C7 /* MainPresenter.swift */; };
 		F22B9A4522D2333300589D1C /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B9A4422D2333300589D1C /* Presentable.swift */; };
 		F22B9A4A22D23B5A00589D1C /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22B9A4922D23B5A00589D1C /* TabBar.storyboard */; };
-		F22B9A4C22D2416C00589D1C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B9A4B22D2416C00589D1C /* R.generated.swift */; };
+		F22B9A4E22D2467000589D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22B9A4D22D2467000589D1C /* Main.storyboard */; };
+		F22B9A5022D2469400589D1C /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F22B9A4F22D2469400589D1C /* Settings.storyboard */; };
+		F22B9A5422D2486A00589D1C /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B9A5322D2486A00589D1C /* R.generated.swift */; };
+		F22B9A5722D24FF300589D1C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22B9A5622D24FF300589D1C /* UIViewController.swift */; };
 		F25F50EC22D2088A00F5142D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F50EB22D2088A00F5142D /* AppDelegate.swift */; };
 		F25F50F422D2088B00F5142D /* AudiOBD2Scanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F25F50F222D2088A00F5142D /* AudiOBD2Scanner.xcdatamodeld */; };
 		F25F50F622D2088D00F5142D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F25F50F522D2088D00F5142D /* Assets.xcassets */; };
@@ -27,23 +42,42 @@
 		F25F511222D21C6500F5142D /* ApplicationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F511122D21C6500F5142D /* ApplicationConfigurator.swift */; };
 		F25F511422D21C8400F5142D /* ConfiguratorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F511322D21C8400F5142D /* ConfiguratorProtocol.swift */; };
 		F25F511622D21D1F00F5142D /* BusinessLayerAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25F511522D21D1F00F5142D /* BusinessLayerAssembly.swift */; };
+		F2647059C186FD5CED3D2295 /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A329103B75D2525400C130 /* SettingsConfigurator.swift */; };
 		F3D33806B29EE644BB04BD40 /* TabBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30363E5F9D6D1CFB3F62889B /* TabBarAssembler.swift */; };
+		FE94737BD32CB43BA562D568 /* SettingsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9383E6F8EACA2DE350087968 /* SettingsAssembler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05F6406B0AB417890865FF66 /* Pods-AudiOBD2Scanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiOBD2Scanner.release.xcconfig"; path = "Target Support Files/Pods-AudiOBD2Scanner/Pods-AudiOBD2Scanner.release.xcconfig"; sourceTree = "<group>"; };
 		08D5E9B1CE7D46C6486701C3 /* TabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		12B75B023086BDA7E13CF9F7 /* MainProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainProtocols.swift; sourceTree = "<group>"; };
+		1D0929243AB8FE87B2011266 /* SettingsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		1FE8FF06F10696463E83BBFB /* MainRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		261C76127405A300FE9AA934 /* TabBarRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		28CDF13CE9E88E80E7CFD8A7 /* MainConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
+		2BECD31FFAC027C11DB2E22C /* MainInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		30363E5F9D6D1CFB3F62889B /* TabBarAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarAssembler.swift; sourceTree = "<group>"; };
 		311D90EAA79631D0E0F1E8C7 /* TabBarConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		3917FEC200E2335553652367 /* SettingsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
 		3ACF7D1A8D88901DEBD92AE9 /* TabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		49163E1017BFDEA2A8268255 /* SettingsProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
+		6A97B33C3869102919CF046F /* SettingsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
 		6D2EDA99BAF6280F730884B2 /* TabBarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarProtocols.swift; sourceTree = "<group>"; };
 		7D0A4C2064933CD5AA5CCF07 /* TabBarInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
 		8AD6EA915637EAD96B126D99 /* Pods-AudiOBD2Scanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudiOBD2Scanner.debug.xcconfig"; path = "Target Support Files/Pods-AudiOBD2Scanner/Pods-AudiOBD2Scanner.debug.xcconfig"; sourceTree = "<group>"; };
+		9043552EA2D9942A17E2C5C7 /* MainPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		913C30ED3E2D6C44963F332B /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9383E6F8EACA2DE350087968 /* SettingsAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsAssembler.swift; sourceTree = "<group>"; };
+		B379693BDC256843B7F558CC /* MainViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BF4B9DA43F30102A15D5C9C7 /* Pods_AudiOBD2Scanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudiOBD2Scanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB69D08FE9E408691AB80570 /* MainAssembler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MainAssembler.swift; sourceTree = "<group>"; };
+		D1A329103B75D2525400C130 /* SettingsConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
 		F22B9A4422D2333300589D1C /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		F22B9A4922D23B5A00589D1C /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
-		F22B9A4B22D2416C00589D1C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		F22B9A4D22D2467000589D1C /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F22B9A4F22D2469400589D1C /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		F22B9A5322D2486A00589D1C /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		F22B9A5622D24FF300589D1C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		F25F50E822D2088A00F5142D /* AudiOBD2Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudiOBD2Scanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25F50EB22D2088A00F5142D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F25F50F322D2088B00F5142D /* AudiOBD2Scanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AudiOBD2Scanner.xcdatamodel; sourceTree = "<group>"; };
@@ -87,12 +121,59 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		1595D8340917C627656A4B2C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9043552EA2D9942A17E2C5C7 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2A9FDE0BAB971D9DF62AEA1D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3917FEC200E2335553652367 /* SettingsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2D4ECF0314ACE5A14BFE55F7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2BECD31FFAC027C11DB2E22C /* MainInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		2EE2C5DD35DBB00015719025 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				6D2EDA99BAF6280F730884B2 /* TabBarProtocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		31FD9D8FFF9A332D3291D757 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				CE778AB2C9B42F60B86104D5 /* View */,
+				3C1255CF3116134BBEBF6628 /* Presenter */,
+				9F15454F8A70183F4083B182 /* Interactor */,
+				2A9FDE0BAB971D9DF62AEA1D /* Router */,
+				6CE30DCA2E91BB12D59C44CB /* Configurator */,
+				97D7BC4E522749555FA137BD /* Assembly */,
+				E09A52686ED1F9CC3960D919 /* Protocols */,
+				F22B9A4F22D2469400589D1C /* Settings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3C1255CF3116134BBEBF6628 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1D0929243AB8FE87B2011266 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		4C68F00F83388131845B15A0 /* Configurator */ = {
@@ -119,12 +200,91 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
+		6CE30DCA2E91BB12D59C44CB /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				D1A329103B75D2525400C130 /* SettingsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		77A8892CDFE408FA93FA9195 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				12B75B023086BDA7E13CF9F7 /* MainProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8219218649F9F4F2146511EE /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BA3C50485BEBA042FF76E3C6 /* View */,
+				1595D8340917C627656A4B2C /* Presenter */,
+				2D4ECF0314ACE5A14BFE55F7 /* Interactor */,
+				98322EF2CF14FE66CEDFEC77 /* Router */,
+				BD1D199906B92CB20BEB14FE /* Configurator */,
+				FC59EEAD6BB0A3D4C59FCD67 /* Assembly */,
+				77A8892CDFE408FA93FA9195 /* Protocols */,
+				F22B9A4D22D2467000589D1C /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		97D7BC4E522749555FA137BD /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9383E6F8EACA2DE350087968 /* SettingsAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		98322EF2CF14FE66CEDFEC77 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1FE8FF06F10696463E83BBFB /* MainRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		98D2C1BEDD82367E57C351AC /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				3ACF7D1A8D88901DEBD92AE9 /* TabBarPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9F15454F8A70183F4083B182 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6A97B33C3869102919CF046F /* SettingsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BA3C50485BEBA042FF76E3C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B379693BDC256843B7F558CC /* MainViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD1D199906B92CB20BEB14FE /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				28CDF13CE9E88E80E7CFD8A7 /* MainConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		CE778AB2C9B42F60B86104D5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				913C30ED3E2D6C44963F332B /* SettingsViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D17927DA54F61F8809E9ABC4 /* View */ = {
@@ -150,10 +310,20 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		E09A52686ED1F9CC3960D919 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				49163E1017BFDEA2A8268255 /* SettingsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		F22B9A4022D22F4700589D1C /* MainFlow */ = {
 			isa = PBXGroup;
 			children = (
 				D639DA0590DA74877233CFB1 /* TabBar */,
+				8219218649F9F4F2146511EE /* Main */,
+				31FD9D8FFF9A332D3291D757 /* Settings */,
 			);
 			path = MainFlow;
 			sourceTree = "<group>";
@@ -164,6 +334,14 @@
 				F22B9A4422D2333300589D1C /* Presentable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F22B9A5522D24FDC00589D1C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F22B9A5622D24FF300589D1C /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F25F50DF22D2088A00F5142D = {
@@ -208,6 +386,7 @@
 		F25F510122D2191600F5142D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				F22B9A5522D24FDC00589D1C /* Extensions */,
 				F22B9A4322D2332800589D1C /* Protocols */,
 			);
 			path = Common;
@@ -216,7 +395,7 @@
 		F25F510222D2191D00F5142D /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				F22B9A4B22D2416C00589D1C /* R.generated.swift */,
+				F22B9A5322D2486A00589D1C /* R.generated.swift */,
 				F25F50F522D2088D00F5142D /* Assets.xcassets */,
 				F25F50FA22D2088D00F5142D /* Info.plist */,
 				F25F50F222D2088A00F5142D /* AudiOBD2Scanner.xcdatamodeld */,
@@ -301,6 +480,14 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		FC59EEAD6BB0A3D4C59FCD67 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				CB69D08FE9E408691AB80570 /* MainAssembler.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,7 +496,7 @@
 			buildConfigurationList = F25F50FD22D2088D00F5142D /* Build configuration list for PBXNativeTarget "AudiOBD2Scanner" */;
 			buildPhases = (
 				D0881B81909AF87F4FFC6EFD /* [CP] Check Pods Manifest.lock */,
-				F22B9A4622D234A100589D1C /* ShellScript */,
+				F22B9A5122D247F600589D1C /* ShellScript */,
 				F25F50E422D2088A00F5142D /* Sources */,
 				F25F50E522D2088A00F5142D /* Frameworks */,
 				F25F50E622D2088A00F5142D /* Resources */,
@@ -365,6 +552,8 @@
 				F25F50F922D2088D00F5142D /* LaunchScreen.storyboard in Resources */,
 				F22B9A4A22D23B5A00589D1C /* TabBar.storyboard in Resources */,
 				F25F50F622D2088D00F5142D /* Assets.xcassets in Resources */,
+				F22B9A4E22D2467000589D1C /* Main.storyboard in Resources */,
+				F22B9A5022D2469400589D1C /* Settings.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +599,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F22B9A4622D234A100589D1C /* ShellScript */ = {
+		F22B9A5122D247F600589D1C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -438,21 +627,36 @@
 			files = (
 				F25F50F422D2088B00F5142D /* AudiOBD2Scanner.xcdatamodeld in Sources */,
 				F22B9A4522D2333300589D1C /* Presentable.swift in Sources */,
+				F22B9A5422D2486A00589D1C /* R.generated.swift in Sources */,
 				F25F511422D21C8400F5142D /* ConfiguratorProtocol.swift in Sources */,
 				F25F50EC22D2088A00F5142D /* AppDelegate.swift in Sources */,
 				F25F511022D21C4C00F5142D /* AppearanceConfigurator.swift in Sources */,
 				F25F511222D21C6500F5142D /* ApplicationConfigurator.swift in Sources */,
 				F25F510C22D21ACA00F5142D /* ModuleAssembly.swift in Sources */,
 				F25F510E22D21BE900F5142D /* ApplicationAssembler.swift in Sources */,
-				F22B9A4C22D2416C00589D1C /* R.generated.swift in Sources */,
 				F25F511622D21D1F00F5142D /* BusinessLayerAssembly.swift in Sources */,
 				0F90C4F5D15B0713860AF7CC /* TabBarViewController.swift in Sources */,
 				288FBE7304F809873AD00406 /* TabBarPresenter.swift in Sources */,
 				9A55EE6688955CB5C09B8768 /* TabBarInteractor.swift in Sources */,
 				CAA16E4129DC5DA80445078D /* TabBarRouter.swift in Sources */,
+				F22B9A5722D24FF300589D1C /* UIViewController.swift in Sources */,
 				B7C65A6113EBDDBB6A858B31 /* TabBarConfigurator.swift in Sources */,
 				F3D33806B29EE644BB04BD40 /* TabBarAssembler.swift in Sources */,
 				42747C521D70E6BD39AD5221 /* TabBarProtocols.swift in Sources */,
+				B59DCC6E2954D7246CC8BF0F /* MainViewController.swift in Sources */,
+				EDB9388DDB3F70A64E898D02 /* MainPresenter.swift in Sources */,
+				687E47C966A306AC66C20065 /* MainInteractor.swift in Sources */,
+				E153489E9995A27C81FCF4C4 /* MainRouter.swift in Sources */,
+				723F6CB12D20DF61FFA2EBFD /* MainConfigurator.swift in Sources */,
+				440CEEA7F36362B46A230A3F /* MainAssembler.swift in Sources */,
+				38088DFD6B88A13CB46419F7 /* MainProtocols.swift in Sources */,
+				3C2C6F2A86AC3F805EE646D0 /* SettingsViewController.swift in Sources */,
+				373FD16EE3B5410312DDF9EA /* SettingsPresenter.swift in Sources */,
+				0A4CD4F60C9E9D8BAC7F44DB /* SettingsInteractor.swift in Sources */,
+				CF2F7F1D929FE03FF3831B42 /* SettingsRouter.swift in Sources */,
+				F2647059C186FD5CED3D2295 /* SettingsConfigurator.swift in Sources */,
+				FE94737BD32CB43BA562D568 /* SettingsAssembler.swift in Sources */,
+				9EF7B4F4485144A6B38722FA /* SettingsProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
