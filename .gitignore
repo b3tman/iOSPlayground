@@ -5,10 +5,5 @@ xcuserdata
 *.xcworkspace
 Pods
 Podfile.lock
-ECHOWallet/Other/R.generated.swift
-ECHOWallet/Other/Fabric.xcconfig
-ECHOWallet/Other/GoogleService-Info.plist
-.DS_Store
-node_modules
-ECHOWallet/Classes/BuisnessLayer/GraphQL/EchoGraphQLAPI.swift
+AudiOBD2Scanner/R.generated.swift
 Carthage
