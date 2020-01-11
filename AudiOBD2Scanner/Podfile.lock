@@ -1,0 +1,32 @@
+PODS:
+  - OBD2-Swift (0.1.2)
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
+  - SnapKit (4.0.1)
+  - Swinject (2.6.2)
+
+DEPENDENCIES:
+  - OBD2-Swift
+  - R.swift
+  - SnapKit (~> 4.0.0)
+  - Swinject
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OBD2-Swift
+    - R.swift
+    - R.swift.Library
+    - SnapKit
+    - Swinject
+
+SPEC CHECKSUMS:
+  OBD2-Swift: 073ec7c33eaaa329c8f950fdb9a8c1093d8e9ab9
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
+
+PODFILE CHECKSUM: 2a11a233e7e23b0ef5af7fd3dd5e7ee2b92ec439
+
+COCOAPODS: 1.7.1

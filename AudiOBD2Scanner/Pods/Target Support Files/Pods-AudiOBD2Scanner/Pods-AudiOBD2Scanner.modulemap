@@ -1,0 +1,6 @@
+framework module Pods_AudiOBD2Scanner {
+  umbrella header "Pods-AudiOBD2Scanner-umbrella.h"
+
+  export *
+  module * { export * }
+}
