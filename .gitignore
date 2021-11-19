@@ -5,7 +5,7 @@ xcuserdata
 *.xcworkspace
 Pods
 Podfile.lock
-ECHOWallet/Other/R.generated.swift
+*.generated.swift
 ECHOWallet/Other/Fabric.xcconfig
 ECHOWallet/Other/GoogleService-Info.plist
 .DS_Store
