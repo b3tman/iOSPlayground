@@ -4,28 +4,28 @@ use_frameworks!
 inhibit_all_warnings!
 
 def swinject_pods
-    pod 'Swinject'
+  pod 'Swinject'
 end
 
 def helpers_pods
-    pod 'R.swift'
+  pod 'R.swift'
 end
 
 def ui_helpers_pods
-    pod 'SnapKit', '~> 4.0.0'
+  pod 'SnapKit', '~> 4.0.0'
 end
 
-target 'AudiOBD2Scanner' do
-        
-    swinject_pods
-    helpers_pods
-    ui_helpers_pods
+target 'iOSPlaygrounds' do
+  
+  swinject_pods
+  helpers_pods
+  ui_helpers_pods
 end
 
 post_install do |installer|
- installer.pods_project.targets.each do |target|
-  target.build_configurations.each do |config|
-   config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+    end
   end
- end
 end

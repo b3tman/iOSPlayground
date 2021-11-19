@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AudiOBD2ScannerVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AudiOBD2ScannerVersionString[];
+FOUNDATION_EXPORT double Pods_iOSPlaygroundsVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_iOSPlaygroundsVersionString[];
 

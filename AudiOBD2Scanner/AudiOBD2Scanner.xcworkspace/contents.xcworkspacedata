@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:AudiOBD2Scanner.xcodeproj">
+      location = "group:/Users/maximbrishten/Documents/MyProjects/OBD2/AudiOBD2Scanner/iOSPlaygrounds.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
