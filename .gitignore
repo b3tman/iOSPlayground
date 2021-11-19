@@ -4,7 +4,7 @@ xcuserdata
 *.xcworkspace
 Pods
 Podfile.lock
-AudiOBD2Scanner/R.generated.swift
+AudiOBD2Scanner/Other/R.generated.swift
 .DS_Store
 node_modules
 Carthage

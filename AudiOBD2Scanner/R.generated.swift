@@ -16,8 +16,36 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
-  /// This `R.storyboard` struct is generated, and contains static references to 4 storyboards.
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `MainCell`.
+    static let mainCell = _R.nib._MainCell()
+    
+    /// `UINib(name: "MainCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.mainCell) instead")
+    static func mainCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.mainCell)
+    }
+    
+    static func mainCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MainCell? {
+      return R.nib.mainCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MainCell
+    }
+    
+    fileprivate init() {}
+  }
+  
+  /// This `R.reuseIdentifier` struct is generated, and contains static references to 1 reuse identifiers.
+  struct reuseIdentifier {
+    /// Reuse identifier `mainCell`.
+    static let mainCell: Rswift.ReuseIdentifier<MainCell> = Rswift.ReuseIdentifier(identifier: "mainCell")
+    
+    fileprivate init() {}
+  }
+  
+  /// This `R.storyboard` struct is generated, and contains static references to 5 storyboards.
   struct storyboard {
+    /// Storyboard `AlamofireTest`.
+    static let alamofireTest = _R.storyboard.alamofireTest()
     /// Storyboard `LaunchScreen`.
     static let launchScreen = _R.storyboard.launchScreen()
     /// Storyboard `Main`.
@@ -26,6 +54,11 @@ struct R: Rswift.Validatable {
     static let settings = _R.storyboard.settings()
     /// Storyboard `TabBar`.
     static let tabBar = _R.storyboard.tabBar()
+    
+    /// `UIStoryboard(name: "AlamofireTest", bundle: ...)`
+    static func alamofireTest(_: Void = ()) -> UIKit.UIStoryboard {
+      return UIKit.UIStoryboard(resource: R.storyboard.alamofireTest)
+    }
     
     /// `UIStoryboard(name: "LaunchScreen", bundle: ...)`
     static func launchScreen(_: Void = ()) -> UIKit.UIStoryboard {
@@ -50,6 +83,61 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
+  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
+  struct string {
+    /// This `R.string.localizable` struct is generated, and contains static references to 4 localization keys.
+    struct localizable {
+      /// en translation: List of themes
+      /// 
+      /// Locales: en
+      static let mainTitle = Rswift.StringResource(key: "main.title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Main
+      /// 
+      /// Locales: en
+      static let mainTabBarItem = Rswift.StringResource(key: "main.tab.bar.item", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Settings
+      /// 
+      /// Locales: en
+      static let settingsTabBarItem = Rswift.StringResource(key: "settings.tab.bar.item", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      /// en translation: Training Alamofire
+      /// 
+      /// Locales: en
+      static let mainAlamofireItem = Rswift.StringResource(key: "main.alamofire.item", tableName: "Localizable", bundle: R.hostingBundle, locales: ["en"], comment: nil)
+      
+      /// en translation: List of themes
+      /// 
+      /// Locales: en
+      static func mainTitle(_: Void = ()) -> String {
+        return NSLocalizedString("main.title", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Main
+      /// 
+      /// Locales: en
+      static func mainTabBarItem(_: Void = ()) -> String {
+        return NSLocalizedString("main.tab.bar.item", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Settings
+      /// 
+      /// Locales: en
+      static func settingsTabBarItem(_: Void = ()) -> String {
+        return NSLocalizedString("settings.tab.bar.item", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// en translation: Training Alamofire
+      /// 
+      /// Locales: en
+      static func mainAlamofireItem(_: Void = ()) -> String {
+        return NSLocalizedString("main.alamofire.item", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    fileprivate init() {}
+  }
+  
   fileprivate struct intern: Rswift.Validatable {
     fileprivate static func validate() throws {
       try _R.validate()
@@ -68,12 +156,49 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
   }
   
+  struct nib {
+    struct _MainCell: Rswift.NibResourceType, Rswift.ReuseIdentifierType {
+      typealias ReusableType = MainCell
+      
+      let bundle = R.hostingBundle
+      let identifier = "mainCell"
+      let name = "MainCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> MainCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? MainCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    fileprivate init() {}
+  }
+  
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
+      try alamofireTest.validate()
       try launchScreen.validate()
       try main.validate()
       try settings.validate()
       try tabBar.validate()
+    }
+    
+    struct alamofireTest: Rswift.StoryboardResourceType, Rswift.Validatable {
+      let alamofireTestViewController = StoryboardViewControllerResource<AlamofireTestViewController>(identifier: "AlamofireTestViewController")
+      let bundle = R.hostingBundle
+      let name = "AlamofireTest"
+      
+      func alamofireTestViewController(_: Void = ()) -> AlamofireTestViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: alamofireTestViewController)
+      }
+      
+      static func validate() throws {
+        if #available(iOS 11.0, *) {
+        }
+        if _R.storyboard.alamofireTest().alamofireTestViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'alamofireTestViewController' could not be loaded from storyboard 'AlamofireTest' as 'AlamofireTestViewController'.") }
+      }
+      
+      fileprivate init() {}
     }
     
     struct launchScreen: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
@@ -90,7 +215,9 @@ struct _R: Rswift.Validatable {
       fileprivate init() {}
     }
     
-    struct main: Rswift.StoryboardResourceType, Rswift.Validatable {
+    struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
+      typealias InitialController = UIKit.UINavigationController
+      
       let bundle = R.hostingBundle
       let mainViewController = StoryboardViewControllerResource<MainViewController>(identifier: "MainViewController")
       let name = "Main"
