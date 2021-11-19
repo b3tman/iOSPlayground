@@ -1,14 +1,10 @@
 Rambafile
 Templates
-swifty_viper_pixelplex
 xcuserdata
 *.xcworkspace
 Pods
 Podfile.lock
-*.generated.swift
-ECHOWallet/Other/Fabric.xcconfig
-ECHOWallet/Other/GoogleService-Info.plist
+R.generated.swift
 .DS_Store
 node_modules
-ECHOWallet/Classes/BuisnessLayer/GraphQL/EchoGraphQLAPI.swift
 Carthage
