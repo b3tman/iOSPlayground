@@ -9,7 +9,7 @@
 import UIKit
 
 
-protocol SettingsViewInput: class, Presentable {
+protocol SettingsViewInput: AnyObject, Presentable {
 
     func setupInitialState()
 }
@@ -19,13 +19,13 @@ protocol SettingsViewOutput {
     func viewIsReady()
 }
 
-protocol SettingsModuleInput: class {
+protocol SettingsModuleInput: AnyObject {
 
 	var viewController: UIViewController { get }
 	var output: SettingsModuleOutput? { get set }
 }
 
-protocol SettingsModuleOutput: class {
+protocol SettingsModuleOutput: AnyObject {
 
 }
 
@@ -33,7 +33,7 @@ protocol SettingsInteractorInput {
 
 }
 
-protocol SettingsInteractorOutput: class {
+protocol SettingsInteractorOutput: AnyObject {
 
 }
 

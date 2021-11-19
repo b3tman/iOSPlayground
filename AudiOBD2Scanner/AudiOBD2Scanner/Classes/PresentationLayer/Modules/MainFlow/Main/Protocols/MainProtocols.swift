@@ -9,9 +9,9 @@
 import UIKit
 
 
-protocol MainViewInput: class, Presentable {
+protocol MainViewInput: AnyObject, Presentable {
 
-    func setupInitialState()
+    func setupInitialState(with models: [MainCellModel])
 }
 
 protocol MainViewOutput {
@@ -19,21 +19,21 @@ protocol MainViewOutput {
     func viewIsReady()
 }
 
-protocol MainModuleInput: class {
+protocol MainModuleInput: AnyObject {
 
 	var viewController: UIViewController { get }
 	var output: MainModuleOutput? { get set }
 }
 
-protocol MainModuleOutput: class {
+protocol MainModuleOutput: AnyObject {
 
 }
 
 protocol MainInteractorInput {
-
+    func getMainModels() -> [MainCellModel]
 }
 
-protocol MainInteractorOutput: class {
+protocol MainInteractorOutput: AnyObject {
 
 }
 

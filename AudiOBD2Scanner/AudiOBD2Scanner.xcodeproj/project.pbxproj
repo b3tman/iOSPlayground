@@ -45,6 +45,10 @@
 		F2647059C186FD5CED3D2295 /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A329103B75D2525400C130 /* SettingsConfigurator.swift */; };
 		F3D33806B29EE644BB04BD40 /* TabBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30363E5F9D6D1CFB3F62889B /* TabBarAssembler.swift */; };
 		FE94737BD32CB43BA562D568 /* SettingsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9383E6F8EACA2DE350087968 /* SettingsAssembler.swift */; };
+		FEFC17942747C40200CF7CED /* BaseMainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC17932747C40200CF7CED /* BaseMainNavigationController.swift */; };
+		FEFC17972747C69300CF7CED /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFC17952747C69300CF7CED /* MainCell.swift */; };
+		FEFC17982747C69300CF7CED /* MainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEFC17962747C69300CF7CED /* MainCell.xib */; };
+		FEFC179C2747C9EE00CF7CED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FEFC179E2747C9EE00CF7CED /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +94,10 @@
 		F25F511122D21C6500F5142D /* ApplicationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationConfigurator.swift; sourceTree = "<group>"; };
 		F25F511322D21C8400F5142D /* ConfiguratorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguratorProtocol.swift; sourceTree = "<group>"; };
 		F25F511522D21D1F00F5142D /* BusinessLayerAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessLayerAssembly.swift; sourceTree = "<group>"; };
+		FEFC17932747C40200CF7CED /* BaseMainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseMainNavigationController.swift; sourceTree = "<group>"; };
+		FEFC17952747C69300CF7CED /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		FEFC17962747C69300CF7CED /* MainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCell.xib; sourceTree = "<group>"; };
+		FEFC179D2747C9EE00CF7CED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +274,7 @@
 		BA3C50485BEBA042FF76E3C6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FEFC17992747C69800CF7CED /* Cell */,
 				B379693BDC256843B7F558CC /* MainViewController.swift */,
 			);
 			path = View;
@@ -386,6 +395,7 @@
 		F25F510122D2191600F5142D /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FEFC17922747C3C200CF7CED /* Base */,
 				F22B9A5522D24FDC00589D1C /* Extensions */,
 				F22B9A4322D2332800589D1C /* Protocols */,
 			);
@@ -399,6 +409,7 @@
 				F25F50F522D2088D00F5142D /* Assets.xcassets */,
 				F25F50FA22D2088D00F5142D /* Info.plist */,
 				F25F50F222D2088A00F5142D /* AudiOBD2Scanner.xcdatamodeld */,
+				FEFC179E2747C9EE00CF7CED /* Localizable.strings */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -488,6 +499,23 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
+		FEFC17922747C3C200CF7CED /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FEFC17932747C40200CF7CED /* BaseMainNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		FEFC17992747C69800CF7CED /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FEFC17952747C69300CF7CED /* MainCell.swift */,
+				FEFC17962747C69300CF7CED /* MainCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -518,11 +546,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = b3tman;
 				TargetAttributes = {
 					F25F50E722D2088A00F5142D = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1310;
 					};
 				};
 			};
@@ -551,6 +580,8 @@
 			files = (
 				F25F50F922D2088D00F5142D /* LaunchScreen.storyboard in Resources */,
 				F22B9A4A22D23B5A00589D1C /* TabBar.storyboard in Resources */,
+				FEFC17982747C69300CF7CED /* MainCell.xib in Resources */,
+				FEFC179C2747C9EE00CF7CED /* Localizable.strings in Resources */,
 				F25F50F622D2088D00F5142D /* Assets.xcassets in Resources */,
 				F22B9A4E22D2467000589D1C /* Main.storyboard in Resources */,
 				F22B9A5022D2469400589D1C /* Settings.storyboard in Resources */,
@@ -627,6 +658,7 @@
 			files = (
 				F25F50F422D2088B00F5142D /* AudiOBD2Scanner.xcdatamodeld in Sources */,
 				F22B9A4522D2333300589D1C /* Presentable.swift in Sources */,
+				FEFC17972747C69300CF7CED /* MainCell.swift in Sources */,
 				F22B9A5422D2486A00589D1C /* R.generated.swift in Sources */,
 				F25F511422D21C8400F5142D /* ConfiguratorProtocol.swift in Sources */,
 				F25F50EC22D2088A00F5142D /* AppDelegate.swift in Sources */,
@@ -649,6 +681,7 @@
 				E153489E9995A27C81FCF4C4 /* MainRouter.swift in Sources */,
 				723F6CB12D20DF61FFA2EBFD /* MainConfigurator.swift in Sources */,
 				440CEEA7F36362B46A230A3F /* MainAssembler.swift in Sources */,
+				FEFC17942747C40200CF7CED /* BaseMainNavigationController.swift in Sources */,
 				38088DFD6B88A13CB46419F7 /* MainProtocols.swift in Sources */,
 				3C2C6F2A86AC3F805EE646D0 /* SettingsViewController.swift in Sources */,
 				373FD16EE3B5410312DDF9EA /* SettingsPresenter.swift in Sources */,
@@ -669,6 +702,14 @@
 				F25F50F822D2088D00F5142D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FEFC179E2747C9EE00CF7CED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEFC179D2747C9EE00CF7CED /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -700,6 +741,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -761,6 +803,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -798,14 +841,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VCKQL6T87N;
 				INFOPLIST_FILE = "$(SRCROOT)/AudiOBD2Scanner/Other/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = audi.car.scanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -818,14 +861,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VCKQL6T87N;
 				INFOPLIST_FILE = "$(SRCROOT)/AudiOBD2Scanner/Other/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = audi.car.scanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

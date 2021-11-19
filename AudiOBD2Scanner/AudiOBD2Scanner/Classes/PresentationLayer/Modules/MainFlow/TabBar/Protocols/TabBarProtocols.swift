@@ -18,7 +18,7 @@ typealias ViewControllers = (main: UIViewController,
 typealias TabBarModules = (main: UIViewController,
                        settings: UIViewController)
 
-protocol TabBarViewInput: class, Presentable {
+protocol TabBarViewInput: AnyObject, Presentable {
 
     func setupInitialState(viewControllers: ViewControllers, selectedIndex: Int)
 }
@@ -28,13 +28,13 @@ protocol TabBarViewOutput {
     func viewIsReady()
 }
 
-protocol TabBarModuleInput: class {
+protocol TabBarModuleInput: AnyObject {
 
 	var viewController: UIViewController { get }
 	var output: TabBarModuleOutput? { get set }
 }
 
-protocol TabBarModuleOutput: class {
+protocol TabBarModuleOutput: AnyObject {
 
 }
 
@@ -43,7 +43,7 @@ protocol TabBarInteractorInput {
     func prepareViewControllersFromTabBarModules(modules: TabBarModules) -> ViewControllers
 }
 
-protocol TabBarInteractorOutput: class {
+protocol TabBarInteractorOutput: AnyObject {
 
 }
 

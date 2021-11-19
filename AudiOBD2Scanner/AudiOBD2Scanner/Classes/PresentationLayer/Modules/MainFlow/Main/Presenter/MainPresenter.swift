@@ -24,18 +24,16 @@ extension MainPresenter: MainModuleInput {
   	var viewController: UIViewController {
     	return view.viewController
   	}
-
 }
 
 // MARK: - MainViewOutput
 
 extension MainPresenter: MainViewOutput {
-
-
+    
     func viewIsReady() {
-
+        let models = interactor.getMainModels()
+        view.setupInitialState(with: models)
     }
-
 }
 
 // MARK: - MainInteractorOutput

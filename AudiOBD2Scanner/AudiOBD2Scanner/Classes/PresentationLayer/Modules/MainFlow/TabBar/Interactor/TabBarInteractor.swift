@@ -17,8 +17,8 @@ class TabBarInteractor {
 extension TabBarInteractor: TabBarInteractorInput {
 
     func prepareViewControllersFromTabBarModules(modules: TabBarModules) -> ViewControllers {
-        
-        return ViewControllers(main: modules.main,
+        let navigationController = BaseMainNavigationController()
+        return ViewControllers(main: modules.main.wrapToNavigationController(navigationController: navigationController),
                                settings: modules.settings.wrapToNavigationController())
     }
 }
