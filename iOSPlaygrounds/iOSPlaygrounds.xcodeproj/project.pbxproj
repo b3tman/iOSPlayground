@@ -733,7 +733,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$SRCROOT/R.generated.swift",
+				$SRCROOT/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -934,6 +934,7 @@
 			baseConfigurationReference = A3AADD77D66D807BCA9A1B4D /* Pods-iOSPlaygrounds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VCKQL6T87N;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSPlaygrounds/Other/Info.plist";
@@ -954,6 +955,7 @@
 			baseConfigurationReference = 7972586F261C19B960C14298 /* Pods-iOSPlaygrounds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VCKQL6T87N;
 				INFOPLIST_FILE = "$(SRCROOT)/iOSPlaygrounds/Other/Info.plist";
