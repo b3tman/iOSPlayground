@@ -14,7 +14,7 @@ class TabBarModuleConfigurator {
     func configureModule () -> TabBarModuleInput {
 
         let moduleInput = AppDelegate.moduleAssembly.resolver.resolve(TabBarModuleInput.self)!
-        
+
         return moduleInput
     }
 

@@ -12,7 +12,7 @@ class MainPresenter {
 
     weak var view: MainViewInput!
     weak var output: MainModuleOutput?
-    
+
     var interactor: MainInteractorInput!
     var router: MainRouterInput!
 }
@@ -29,7 +29,7 @@ extension MainPresenter: MainModuleInput {
 // MARK: - MainViewOutput
 
 extension MainPresenter: MainViewOutput {
-    
+
     func viewIsReady() {
         let models = interactor.getMainModels()
         view.setupInitialState(with: models)

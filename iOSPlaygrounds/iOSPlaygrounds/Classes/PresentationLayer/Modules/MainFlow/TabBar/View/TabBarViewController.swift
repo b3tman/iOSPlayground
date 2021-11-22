@@ -16,14 +16,14 @@ class TabBarViewController: UITabBarController {
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         delegate = self
-        
+
         output.viewIsReady()
         updateSelection()
     }
-    
-    //MARK: - Private
+
+    // MARK: - Private
     func updateSelection() {
         let normalFont = UIFont.systemFont(ofSize: 20, weight: .medium)
         let selectedFont = UIFont.systemFont(ofSize: 20, weight: .bold)
@@ -37,7 +37,7 @@ class TabBarViewController: UITabBarController {
 // MARK: - UITabBarControllerDelegate
 
 extension TabBarViewController: UITabBarControllerDelegate {
-  
+
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         updateSelection()
     }
@@ -46,19 +46,17 @@ extension TabBarViewController: UITabBarControllerDelegate {
 // MARK: - TabBarViewInput
 
 extension TabBarViewController: TabBarViewInput {
-  
+
 	func setupInitialState(viewControllers: ViewControllers, selectedIndex: Int) {
-        
+
         self.tabbarControllers = viewControllers
         viewControllers.main.title = R.string.localizable.mainTabBarItem()
         viewControllers.settings.title = R.string.localizable.settingsTabBarItem()
-    
+
         self.viewControllers = [viewControllers.main,
                                 viewControllers.settings]
-        
-        
-        
+
         self.selectedIndex = selectedIndex
   	}
-  
+
 }

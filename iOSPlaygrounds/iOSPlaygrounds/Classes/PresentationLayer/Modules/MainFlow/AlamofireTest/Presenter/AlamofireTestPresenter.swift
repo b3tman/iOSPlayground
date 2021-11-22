@@ -9,10 +9,10 @@
 import UIKit
 
 final class AlamofireTestPresenter {
-    
+
     weak var view: AlamofireTestViewInput!
     weak var output: AlamofireTestModuleOutput?
-    
+
     var interactor: AlamofireTestInteractorInput!
     var router: AlamofireTestRouterInput!
 }
@@ -20,7 +20,7 @@ final class AlamofireTestPresenter {
 // MARK: - AlamofireTestModuleInput
 
 extension AlamofireTestPresenter: AlamofireTestModuleInput {
-    
+
     var viewController: UIViewController {
         return view.viewController
     }
@@ -29,15 +29,14 @@ extension AlamofireTestPresenter: AlamofireTestModuleInput {
 // MARK: - AlamofireTestViewOutput
 
 extension AlamofireTestPresenter: AlamofireTestViewOutput {
-    
-    
+
     func viewIsReady() {
-        
+
     }
 }
 
 // MARK: - AlamofireTestInteractorOutput
 
 extension AlamofireTestPresenter: AlamofireTestInteractorOutput {
-    
+
 }

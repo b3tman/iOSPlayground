@@ -9,7 +9,7 @@
 final class AlamofireTestInteractor {
 
     weak var output: AlamofireTestInteractorOutput!
-    
+
 }
 
 // MARK: - AlamofireTestInput

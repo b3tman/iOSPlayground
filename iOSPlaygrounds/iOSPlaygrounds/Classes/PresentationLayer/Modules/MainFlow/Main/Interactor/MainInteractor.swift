@@ -9,7 +9,7 @@
 class MainInteractor {
 
     weak var output: MainInteractorOutput!
-    
+
     func getMainModels() -> [MainCellModel] {
         let alamofireModel = MainCellModel(text: R.string.localizable.mainAlamofireItem())
         return [alamofireModel]
@@ -21,5 +21,4 @@ class MainInteractor {
 
 extension MainInteractor: MainInteractorInput {
 
-  
 }

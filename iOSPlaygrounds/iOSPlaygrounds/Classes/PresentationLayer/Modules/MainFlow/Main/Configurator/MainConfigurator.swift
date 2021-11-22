@@ -14,7 +14,7 @@ class MainModuleConfigurator {
     func configureModule () -> MainModuleInput {
 
         let moduleInput = AppDelegate.moduleAssembly.resolver.resolve(MainModuleInput.self)!
-        
+
         return moduleInput
     }
 

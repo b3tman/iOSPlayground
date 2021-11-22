@@ -22,9 +22,9 @@ class SettingsViewController: UIViewController {
 // MARK: - SettingsViewInput
 
 extension SettingsViewController: SettingsViewInput {
-  
+
 	func setupInitialState() {
-    
+
   	}
-  
+
 }

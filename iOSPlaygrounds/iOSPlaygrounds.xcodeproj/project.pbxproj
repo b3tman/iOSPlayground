@@ -618,6 +618,7 @@
 				F25F50E522D2088A00F5142D /* Frameworks */,
 				F25F50E622D2088A00F5142D /* Resources */,
 				6FDE61528DFC1F2718F91A4A /* [CP] Embed Pods Frameworks */,
+				FE5AF35D274B904400E6F561 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -738,6 +739,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		FE5AF35D274B904400E6F561 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

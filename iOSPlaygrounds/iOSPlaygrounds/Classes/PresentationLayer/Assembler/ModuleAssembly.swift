@@ -9,12 +9,12 @@
 import Swinject
 
 class ModuleAssembly {
-    
+
     private let assembler: Assembler!
     public var resolver: Resolver {
         return assembler.resolver
     }
-    
+
     init(parent: Assembler) {
         assembler = Assembler([TabBarModuleAssembler(),
                                MainModuleAssembler(),

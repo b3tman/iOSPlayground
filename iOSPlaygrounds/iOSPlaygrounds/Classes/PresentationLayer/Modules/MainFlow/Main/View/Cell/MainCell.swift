@@ -14,12 +14,12 @@ struct MainCellModel {
 
 class MainCell: UITableViewCell {
 
-    //MARK: - Outlets
+    // MARK: - Outlets
     @IBOutlet weak var menuNameLabel: UILabel!
-    
-    //MARK: - LifeCycle
+
+    // MARK: - LifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+
     }
 }

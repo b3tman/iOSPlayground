@@ -14,7 +14,7 @@ class SettingsModuleConfigurator {
     func configureModule () -> SettingsModuleInput {
 
         let moduleInput = AppDelegate.moduleAssembly.resolver.resolve(SettingsModuleInput.self)!
-        
+
         return moduleInput
     }
 

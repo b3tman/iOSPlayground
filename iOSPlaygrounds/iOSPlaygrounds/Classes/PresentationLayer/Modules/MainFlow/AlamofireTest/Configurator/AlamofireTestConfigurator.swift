@@ -10,11 +10,11 @@ import UIKit
 import Swinject
 
 final class AlamofireTestModuleConfigurator {
-    
+
     func configureModule () -> AlamofireTestModuleInput {
-        
+
         let moduleInput = AppDelegate.moduleAssembly.resolver.resolve(AlamofireTestModuleInput.self)!
-        
+
         return moduleInput
     }
 }

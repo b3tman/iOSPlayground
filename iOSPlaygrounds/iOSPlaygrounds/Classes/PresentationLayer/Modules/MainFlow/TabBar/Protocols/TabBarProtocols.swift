@@ -39,7 +39,7 @@ protocol TabBarModuleOutput: AnyObject {
 }
 
 protocol TabBarInteractorInput {
-    
+
     func prepareViewControllersFromTabBarModules(modules: TabBarModules) -> ViewControllers
 }
 

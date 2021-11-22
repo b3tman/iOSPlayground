@@ -9,6 +9,7 @@ end
 
 def helpers_pods
   pod 'R.swift'
+  pod 'SwiftLint'
 end
 
 def ui_helpers_pods

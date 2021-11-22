@@ -12,10 +12,10 @@ class TabBarPresenter {
 
     weak var view: TabBarViewInput!
     weak var output: TabBarModuleOutput?
-    
+
     var interactor: TabBarInteractorInput!
     var router: TabBarRouterInput!
-    
+
     var selectedTab: SelectedTab = .main
 }
 
@@ -33,10 +33,10 @@ extension TabBarPresenter: TabBarModuleInput {
 extension TabBarPresenter: TabBarViewOutput {
 
     func viewIsReady() {
-        
+
         let modules = router.getModules()
         let viewControllers = interactor.prepareViewControllersFromTabBarModules(modules: modules)
-        
+
         view.setupInitialState(viewControllers: viewControllers, selectedIndex: selectedTab.rawValue)
     }
 }

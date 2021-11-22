@@ -10,25 +10,25 @@ import UIKit
 import Swinject
 
 final class AlamofireTestModuleAssembler: Assembly {
-    
+
     func assemble(container: Container) {
 
         container.register(AlamofireTestInteractor.self) { ( _, presenter: AlamofireTestPresenter) in
 
             let interactor = AlamofireTestInteractor()
             interactor.output = presenter
-            
+
             return interactor
         }
-        
+
         container.register(AlamofireTestRouter.self) { (_, viewController: AlamofireTestViewController) in
 
             let router = AlamofireTestRouter()
             router.view = viewController
-            
+
             return router
         }
-        
+
         container.register(AlamofireTestModuleInput.self) { resolver in
 
             let presenter = AlamofireTestPresenter()
@@ -38,10 +38,10 @@ final class AlamofireTestModuleAssembler: Assembly {
             presenter.view = viewController
             presenter.interactor = resolver.resolve(AlamofireTestInteractor.self, argument: presenter)
             presenter.router = resolver.resolve(AlamofireTestRouter.self, argument: viewController)
-            
+
             return presenter
         }
-        
+
         container.register(AlamofireTestViewController.self) { (_, presenter: AlamofireTestPresenter) in
 
             let viewController = R.storyboard.alamofireTest.alamofireTestViewController()!

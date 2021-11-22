@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 protocol MainViewInput: AnyObject, Presentable {
 
     func setupInitialState(with models: [MainCellModel])

@@ -9,33 +9,33 @@
 import UIKit
 
 protocol AlamofireTestViewInput: AnyObject, Presentable {
-    
+
     func setupInitialState()
 }
 
 protocol AlamofireTestViewOutput {
-    
+
     func viewIsReady()
 }
 
 protocol AlamofireTestModuleInput: AnyObject {
-    
+
     var viewController: UIViewController { get }
     var output: AlamofireTestModuleOutput? { get set }
 }
 
 protocol AlamofireTestModuleOutput: AnyObject {
-    
+
 }
 
 protocol AlamofireTestInteractorInput {
-    
+
 }
 
 protocol AlamofireTestInteractorOutput: AnyObject {
-    
+
 }
 
 protocol AlamofireTestRouterInput {
-    
+
 }

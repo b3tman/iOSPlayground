@@ -9,6 +9,6 @@
 import UIKit
 
 final class AlamofireTestRouter: AlamofireTestRouterInput {
-    
+
     weak var view: UIViewController?
 }

@@ -9,7 +9,7 @@
 import Swinject
 
 class BusinessLayerAssembly {
-    
+
     init(parent: Assembler) {
         let assemblies: [Assembly] = []
         parent.apply(assemblies: assemblies)

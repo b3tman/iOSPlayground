@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 protocol SettingsViewInput: AnyObject, Presentable {
 
     func setupInitialState()

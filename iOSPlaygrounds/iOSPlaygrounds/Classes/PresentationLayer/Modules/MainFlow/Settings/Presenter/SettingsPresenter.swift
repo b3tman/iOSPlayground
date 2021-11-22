@@ -12,7 +12,7 @@ class SettingsPresenter {
 
     weak var view: SettingsViewInput!
     weak var output: SettingsModuleOutput?
-    
+
     var interactor: SettingsInteractorInput!
     var router: SettingsRouterInput!
 }
@@ -30,7 +30,6 @@ extension SettingsPresenter: SettingsModuleInput {
 // MARK: - SettingsViewOutput
 
 extension SettingsPresenter: SettingsViewOutput {
-
 
     func viewIsReady() {
 

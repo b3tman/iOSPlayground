@@ -9,15 +9,15 @@
 import UIKit
 
 class ApplicationConfigurator: ConfiguratorProtocol {
-    
+
     func configure() {
-        
+
         var rootView: UIViewController!
-        
+
         let viewController = TabBarModuleConfigurator().configureModule().viewController
         rootView = viewController
-        
+
         AppDelegate.currentWindow.rootViewController = rootView
-        
+
     }
 }

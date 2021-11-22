@@ -16,5 +16,4 @@ class SettingsInteractor {
 
 extension SettingsInteractor: SettingsInteractorInput {
 
-  
 }

@@ -9,9 +9,9 @@
 import UIKit
 
 class AlamofireTestViewController: UIViewController {
-    
+
     var output: AlamofireTestViewOutput!
-    
+
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +22,8 @@ class AlamofireTestViewController: UIViewController {
 // MARK: - AlamofireTestViewInput
 
 extension AlamofireTestViewController: AlamofireTestViewInput {
-    
+
     func setupInitialState() {
-        
+
     }
 }
-

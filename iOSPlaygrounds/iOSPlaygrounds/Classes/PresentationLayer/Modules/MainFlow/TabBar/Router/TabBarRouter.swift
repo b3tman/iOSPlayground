@@ -11,12 +11,12 @@ import UIKit
 class TabBarRouter: TabBarRouterInput {
 
 	weak var view: UIViewController?
-    
+
     func getModules() -> TabBarModules {
-        
+
         let main = MainModuleConfigurator().configureModule().viewController
         let settings = SettingsModuleConfigurator().configureModule().viewController
-        
+
         return (main: main,
                 settings: settings)
     }
